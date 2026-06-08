@@ -29,13 +29,14 @@ The ETL workflow is fully automated and modularized into 6 sequential pipelines 
 4. `06_fact_performance` – Performs database lookups to map business keys to surrogate keys, resolves null values, and calculates derived financial metrics (Profit and ROI) using calculator steps.
 
 ## Power BI Dashboards
-A robust data model with 1:N relationships was established in Power BI Desktop. The solution features **6 interactive reports** seamlessly connected via a central navigation dashboard:
+The solution features **6 main interactive reports and a dedicated drill-through page**, seamlessly connected via a central navigation dashboard:
 1. **Industry Overview** – High-level statistics and core business KPIs.
 2. **Genre Analysis** – Distribution, volume, and performance across different movie genres.
 3. **Profitability & ROI** – Deep dive into financial success, budgeting strategies, and returns.
 4. **Top Production Companies** – Ranking and benchmarking of studios based on volume and financial performance.
 5. **Trends Over Time** – Historical cinematic analysis across decades and years utilizing time hierarchies (drill-down functionality).
 6. **Detailed Movie Insights** – A granular tabular view equipped with drill-through capabilities for individual movie analysis.
+7. **Movie Details (Drill-through Page)** – A granular dashboard specifically designed as a drill-through destination from other reports. It allows users to right-click any movie across the solution to access deep-dive performance metrics, financial breakdowns, and specific metadata for that individual title.
 
 *Note: Advanced DAX measures were implemented to calculate running totals, cumulative growth, percentage shares, and dynamic filtering.*
 
